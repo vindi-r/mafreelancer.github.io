@@ -1,0 +1,29 @@
+<section class="portfolio">
+    <div class="article">
+        <h2 class="article__title"><span class="point">Портфолио</span></h2>
+    </div>
+    <nav class="nav nav--filter">
+        <ul class="filter nav__list">
+            <li class="nav__item"><label><input class="nav__radiobutton" type="radio" v-model="selectedCategory" value="All" /><span>Все проекты</span></label></li>
+            <li class="nav__item"><label><input class="nav__radiobutton" type="radio" v-model="selectedCategory" value="HTML" /><span>Вёрстка</span></label></li>
+            <li class="nav__item"><label><input class="nav__radiobutton" type="radio" v-model="selectedCategory" value="JS" /><span>JavaScript</span></label></li>
+            <li class="nav__item"><label><input class="nav__radiobutton" type="radio" v-model="selectedCategory" value="Vector" /><span>Векторная графика</span></label></li>
+        </ul>
+    </nav>
+    <div class="portfolio__list">
+        <div class="portfolio__item" v-bind:data-id="project.id" project v-for="project in filteredProject"><img v-bind:src="'img/previews/'+project.preview">{{ project.name }}</div>
+    </div>
+    <div class="shadow">
+        <div class="modal">
+            <h1 class="modal__title">{{ project[0].name }}</h1>
+            <p class="modal__desc">Beatiful site</p>
+            <p><span class="span-title">Стэк технологий: &nbsp</span><span>HTML, CSS, Bootstrap</span></p>
+            <p><span class="span-title">Дата создания: &nbsp </span><span>April, 2017</span></p>
+            <img class="modal__img" src="img/screenshots/alisayed.png" />
+            <div class="btns-group">
+                <button class="btns-group__button">Открыть</button>
+                <button class="btns-group__button btn-download btns-group__button--download">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</section>

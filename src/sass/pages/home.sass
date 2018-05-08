@@ -1,0 +1,31 @@
+.list-skills
+    &__item
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 1px
+            background: #e3e3e3
+            top: -($gap/4)
+        &:nth-child(1), &:nth-child(2), &:nth-child(3)
+            &::before
+                position: static
+.portfolio
+    &__item
+        overflow: hidden
+        cursor: pointer
+    &__preview
+        display: block
+        margin: 0 auto
+        @extend .transition-ease
+        &:hover
+            transform: scale(1.1)
+
+@media screen and (max-width: 600px)
+    .list-skills__item
+        &:nth-child(2), &:nth-child(3)
+            &::before
+                position: absolute
+    .technologies__item:nth-child(3)::after
+        height: 1px

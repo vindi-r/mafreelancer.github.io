@@ -1,0 +1,45 @@
+html
+    font: 16px 'Open Sans'
+button
+    font-size: 0.75rem
+    font-weight: 700
+.point
+    &::after
+        content: '.'
+        color: $blue
+h1, h2, h4, .logo
+    font-weight: 700
+a
+    text-decoration: none
+.mdi
+    color: $black
+    margin: 0 15px 0 0
+    font-size: 1.3rem
+    &:hover
+        color: $blue
+.logo
+    font-size: 24px
+.nav
+    font-size: 12px
+    text-transform: uppercase
+    font-weight: 700
+    &__list
+        list-style-type: none
+.span-title
+    font-weight: 700
+    float: left
+    & + span
+        display: block
+        padding: 0 0 0 90px
+section
+    display: grid
+
+.skills
+    &__item
+        font-size: 0.85rem
+
+.feedback
+    &__input, &__textarea
+        font-size: 0.8em
+footer
+    font-size: 0.8em

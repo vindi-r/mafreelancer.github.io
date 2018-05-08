@@ -1,0 +1,132 @@
+.wrapper
+    margin: 0 auto
+    width: 1170px
+section
+    display: grid
+    padding: 30px 0
+    border-top: 1px solid $grey
+.hello
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: $gap
+    border: 0
+    padding: 100px 0 20px
+    &__picture
+        width: 90%
+        margin: auto
+.technologies
+    grid-template-columns: 1fr 2fr
+    grid-gap: $gap
+    &__list
+        display: grid
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr)
+        grid-gap: $gap
+    &__item
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            width: 100%
+            background: #e3e3e3
+            bottom: -15px
+        &:nth-child(1), &:nth-child(2)
+            &::after
+                height: 1px
+.skills
+    display: grid
+    grid-template-columns: 1fr 2fr
+    grid-gap: $gap
+    &__title
+        grid-column: 1/-1
+.list-skills
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: $gap/2
+.portfolio
+    &__list
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: $gap
+    &__item
+        &--markup
+            background: orange
+        &--js
+            background: yellow
+        &--design
+            background: violet
+        &--vector
+            background: black
+.feedback
+    grid-template-columns: 1fr 2fr
+    grid-gap: $gap
+    &__form
+        display: grid
+        grid-template-columns: 2fr 3fr
+        grid-gap: $gap
+    &__textarea
+        grid-area: 1/2/3/2
+    &__buttons
+        justify-self: right
+        grid-column: 1/-1
+
+
+    
+@media screen and (max-width: 1200px)
+    .wrapper
+        width: 960px
+
+@media screen and (max-width: 992px)
+    .wrapper
+        width: 740px
+    .technologies
+        grid-template: inherit
+        &__list
+            //grid-template: inherit
+    .skills
+        grid-template: inherit
+    .portfolio
+        &__list
+            grid-template-columns: repeat(3, 1fr)
+    .feedback
+        grid-template: inherit
+        &__textarea
+            grid-column: 1/-1
+            grid-row: 2/3
+            height: 25vh
+@media screen and (max-width: 768px)
+    .wrapper
+        width: 570px
+    .hello
+        grid-template: inherit
+    .skills
+        &__list
+            grid-template: inherit
+    .portfolio
+        &__list
+            grid-template-columns: repeat(2, 1fr)
+
+@media screen and (max-width: 600px)
+    .wrapper
+        width: 480px
+    .portfolio
+        &__list
+            grid-template-columns: 1fr
+    .technologies
+        &__list
+            grid-template: inherit
+    .feedback
+        &__form
+            grid-template-rows: repeat(4, auto)
+        &__input
+            grid-column: 1/-1
+        &__textarea
+            grid-row: 3/4
+
+@media screen and (max-width: 480px)
+    .wrapper
+        width: calc(100% - 30px) 
+    .nav--filter
+        & > .nav__list
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: $gap
+            text-align: center

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Roboto|Open+Sans")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet" href="css/materialdesignicons.min.css")
+        link(rel="stylesheet" href="css/main.css")
+    body
+        header.header
+            .wrapper
+                .logo
+                    span.point Michel
+                .menu-wrapper
+                    .hamburger-menu
+                nav.nav.nav--menu
+                    ul.nav__list
+                        li.nav__item.nav__item--current
+                            a(href="#").nav__link Главная
+                        li.nav__item
+                            a(href="#").nav__link Технологии
+                        li.nav__item
+                            a(href="#").nav__link Навыки
+                        li.nav__item
+                            a(href="#").nav__link Портфолио
+                        li.nav__item
+                            a(href="#").nav__link Обратная связь
+        //.shadow
+        .wrapper
+            section.hello
+                img(src="img/man_office.svg").hello__picture
+                .hello__about-me
+                    h1.hello__title
+                        span.point Михаил Мигалов
+                    p.hello__desc
+                        | I am a Web Developer located in Hartford, Connecticut. I currently work as a part time Remote Junior Web Developer for Coolor, located in Las Vegas. I am looking to take on more work and to increase my technologies as a Web Developer.
+                    .hello__contacts
+                        p
+                            span.span-title Phone
+                            span +7-909-xxx-xx-xx
+                        p
+                            span.span-title Email
+                            span mafri.michel@gmail.com
+                        p
+                            span.span-title Address
+                            span Moscow
+                        p
+                            span.span-title Social
+                            span
+                                a.mdi.fonts-icons.mdi-twitter(target="_blank" href="https://www.twitter.com/")
+                                a.mdi.fonts-icons.mdi-github-circle(target="_blank" href="https://www.telegram.com/")
+                                a.mdi.fonts-icons.mdi-telegram(target="_blank" href="https://www.github.ip/")
+                    .hello__btns.btns-group
+                        button.btns-group__button Contact me
+                        button.btns-group__button.btn-download.btns-group__button--download Download cv
+            section.technologies
+                .article
+                    h2.article__title
+                        span.point Технологии
+                    p.article__description
+                        | Приведенные здесь технологии очень хорошо помогают мне быстро писать код, благодаря чему становится приятно воплощать авторский дизайн в лаконичный и удобно читаемый сайт.
+                    .article__squares
+                .technologies__list
+                    .technologies__item
+                        h4 Языки программирования
+                        p HTML, CSS, JavaScript, PHP, MySQL, NodeJS, C#.
+                    .technologies__item
+                        h4 Веб-дизайн
+                        p Photoshop, Illustrator, Sketch.
+                    .technologies__item
+                        h4 Препроцессоры
+                        p SASS, SCSS, LESS
+                    .technologies__item
+                        h4 Шаблонизаторы
+                        p Pug, Jade, Haml
+            section.skills
+                .article
+                    h2.article__title
+                        span.point Навыки
+                    p.article__description
+                        | Ещё не придумал описание
+                    .article__squares
+                .skills__list
+                    h3.skills__title
+                        span.point Профессиональный уровень
+                    .skills__list.list-skills
+                        .list-skills__item
+                            h4.item-skill__title HTML 5
+                            p.item-skill__desc Свободно владею, пишу валидный и структурированный код, выбираю названия классов по смыслу, чтобы следующий специалист после меня не запутался в названиях.
+                        .list-skills__item
+                            h4.item-skill__title CSS 3
+                            p.item-skill__desc Свободно владею, знаю немсколько хаков, умею правильно кэшировать подключенные стили, использую спрайты и анимацию
+                        .list-skills__item
+                            h4.item-skill__title Adobe Photoshop
+                            p.item-skill__desc Нарезаю PSD-файлы для вёрстки
+                        .list-skills__item
+                            h4.item-skill__title Bootstrap 4
+                            p Использую в основном лишь сетку, однако могу применить и другие стили оттуда.
+                        .list-skills__item
+                            h4.item-skill__title jQuery
+                            p.item-skill__desc Использую по необходимости, свободно ставлю готовые плагины и умею их подстраивать под нужды заказчика
+                        .list-skills__item
+                            h4.item-skill__title PhpMyAdmin
+                            p.item-skill__desc Умею создавать БД, таблицы, работать с их кодировкой, загружать, выгружать, делать запросы
+                        .list-skills__item
+                            h4.item-skill__title Блочная верстка
+                            p.item-skill__desc Верстаю исключительно блоками
+                        .list-skills__item
+                            h4.item-skill__title Адаптивная верстка
+                            p.item-skill__desc Легко делаю резиновые макеты, подстраивающиеся под любую ширину рабочего окна браузера
+                        .list-skills__item
+                            h4.item-skill__title Flex-верстка
+                            p.item-skill__desc Блочная верстка в которой я использую flex-контейнеры, распологая их по выбранной оси
+                        .list-skills__item
+                            h4.item-skill__title Grid-верстка
+                            p.item-skill__desc Верстка в которой я использую систему сетки, которая позволяет без особых усилий расположить блоки по вашему желанию. За этой технологией будущее, уже её использую.
+                        .list-skills__item
+                            h4.item-skill__title Работа с CMS (Joomla, Wordpress, Moodle, Webasyst, InSales)
+                            p.item-skill__desc Умею работать с административной панелью, натягивать HTML-шаблон на страницу.
+                    h3.skills__title
+                        span.point Базовый уровень
+                    .skills__list.list-skills
+                        .list-skills__item
+                            h4.item-skill__title PHP
+                            p.item-skill__desc Могу работать с шаблонизаторами, разбирать чужой код, знаю синтаксис
+                        .list-skills__item
+                            h4.item-skill__title MySQL
+                            p Умею делать запросы
+                        .list-skills__item
+                            h4.item-skill__title JavaScript
+                            p.item-skill__desc Разбираю чужой код, ставлю плагины, знаю базовый синтаксис
+                        .list-skills__item
+                            h4.item-skill__title Регулярные выражения
+                            p.item-skill__desc Умею пользоваться, правда сложные запросы занимают некоторое время
+                        .list-skills__item
+                            h4.item-skill__title LESS/SASS/Stylus
+                            p.item-skill__desc Знаю принципы работы css-препроцессоров, умею использовать
+                        .list-skills__item
+                            h4.item-skill__title Github
+                            p.item-skill__desc Использую систему контролю версии для хранения своих работ и отслеживания изменения в своих работах
+            section.portfolio
+                .article
+                    h2.article__title
+                        span.point Портфолио
+                nav.nav.nav--filter
+                    ul.nav__list
+                        li.nav__item
+                            a.nav__link.nav__link--current#all-param Все проекты
+                        li.nav__item
+                            a.nav__link Верстка
+                        li.nav__item
+                            a.nav__link JavaScript
+                        li.nav__item
+                            a.nav__link Веб-дизайн
+                        li.nav__item
+                            a.nav__link Векторная графика
+                .portfolio__list
+                    .portfolio__item(data-id="1")
+                        img.portfolio__preview(src="img/previews/alisayed.png")
+                    .portfolio__item(data-id="2")
+                        img.portfolio__preview(src="img/previews/alisayed.png")
+                    .portfolio__item(data-id="3")
+                        img.portfolio__preview(src="img/previews/alisayed.png")
+                    .portfolio__item(data-id="4")
+                        img.portfolio__preview(src="img/previews/alisayed.png")
+                    .portfolio__item(data-id="5")
+                        img.portfolio__preview(src="img/previews/alisayed.png")
+                    .portfolio__item(data-id="6")
+                        img.portfolio__preview(src="img/previews/alisayed.png")
+                    .portfolio__item(data-id="7")
+                        img.portfolio__preview(src="img/previews/alisayed.png")
+                    .portfolio__item(data-id="8")
+                        img.portfolio__preview(src="img/previews/alisayed.png")
+                .modal
+                    .modal-dialog
+                        h1.modal__title Alysayed
+                        p.modal__desc Beatiful site
+                        p
+                            span.span-title Стэк технологий: &nbsp
+                            span HTML, CSS, Bootstrap
+                        p
+                            span.span-title Дата создания: &nbsp 
+                            span April, 2017
+                        img.modal__img(src="img/screenshots/alisayed.png")
+                        .btns-group
+                            button.btns-group__button Открыть сайт
+                            button.btns-group__button.btn-download.btns-group__button--download Закрыть окно
+            section.feedback
+                .article
+                    h2.article__title
+                        span.point Обратная связь
+                    p.article__description
+                        | Are you working on something great? I would love to help make it happen! Drop me a letter and start your project right now! Just do it.
+                    .article__squares
+                form.feedback__form
+                    input.feedback__input(type="text" placeholder="Имя")
+                    input.feedback__input(type="email" placeholder="Электронный адрес")
+                    textarea.feedback__textarea(type="text" placeholder="Сообщение")
+                    .feedback__buttons.btns-group
+                        button.btns-group__button(type="submit") Send Message
+        footer
+            p Copyright 2018 Michel.
+        script(src="http://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+        script(src="js/user.js")
+        
+
+

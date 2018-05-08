@@ -1,0 +1,15 @@
+input, textarea
+    outline: none
+    color: $black
+    
+textarea
+    resize: none
+.feedback
+    &__input, &__textarea
+        padding: 1em
+        border: 1px solid $grey
+            radius: 2px
+        @extend .transition-ease
+        &:hover, &:focus
+            border: 2px solid $blue
+            padding: calc(1em - 1px)
