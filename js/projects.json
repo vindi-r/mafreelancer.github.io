@@ -1,0 +1,57 @@
+{
+    "projects": [{
+            "name": "Alisayed",
+            "category": "Верстка",
+            "preview": "img/src/**.jpg",
+            "url": "https://google.com",
+            "data-created": {
+                "month": "January",
+                "year": 2018
+            },
+            "stack": ["HTML", "CSS", "JS"]
+        },
+        {
+            "name": "Ray",
+            "category": "Верстка",
+            "preview": "img/src/**.jpg",
+            "url": "https://google.com",
+            "data-created": {
+                "month": "January",
+                "year": 2018
+            },
+            "stack": ["HTML", "CSS", "JS"]
+        },
+        {
+            "name": "Ray",
+            "category": "Верстка",
+            "preview": "img/src/**.jpg",
+            "url": "https://google.com",
+            "data-created": {
+                "month": "January",
+                "year": 2018
+            },
+            "stack": ["HTML", "CSS", "JS"]
+        },
+        {
+            "name": "Ray",
+            "category": "Векторная графика",
+            "preview": "img/src/**.jpg",
+            "url": "https://google.com",
+            "data-created": {
+                "month": "January",
+                "year": 2018
+            },
+            "stack": ["HTML", "CSS", "JS"]
+        }, {
+            "name": "Ray",
+            "category": "JS",
+            "preview": "img/src/**.jpg",
+            "url": "https://google.com",
+            "data-created": {
+                "month": "January",
+                "year": 2018
+            },
+            "stack": ["HTML", "CSS", "JS"]
+        }
+    ]
+}
