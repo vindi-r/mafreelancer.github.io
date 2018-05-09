@@ -1,5 +1,15 @@
+/*var pic = document.querySelectorAll(".portfolio__item"),
+    modal_portfolio = document.querySelector(".portfolio > .modal"),
+    modal_form = document.querySelector(".hello > .modal"),
+    btn_close = document.querySelectorAll(".btns-group__button--download"),
+    page = document.querySelector("body"),
+    modal = document.querySelectorAll(".modal"),
+    skills = document.querySelector(".skills"),
+    header = document.querySelector("header");*/
+
 $('.menu-wrapper').on('click', function() {
     $('.hamburger-menu').toggleClass('animate');
+    $('.nav--menu').toggleClass('show-menu');
 });
 
 //fixed header
@@ -17,19 +27,28 @@ $(window).on('scroll', function() {
     fixedHeader();
 });
 
+//grid-expand
+window.onscroll = function() {
+    var ww = skills.getBoundingClientRect().top;
+    if (ww < document.querySelector("header").clientHeight) {
+        skills.classList.add('grid-default');
+    } else {
+        skills.classList.remove('grid-default');
+    }
+}
+
 var vm = new Vue({
     el: ".portfolio",
     data: {
         project: [
-            { id: 1, name: "Bill Gates", category: "HTML", preview: "alisayed.png", url: "https://google.com", data_created: { month: "January", year: 2018 }, stack: ["HTML", "CSS", "JS"] },
-            { id: 2, name: "Steve Jobs", category: "HTML", preview: "amazing.png", url: "https://google.com", data_created: { month: "January", year: 2018 }, stack: ["HTML", "CSS", "JS"] },
-            { id: 3, name: "Jeff Bezos", category: "JS", preview: "Apollo.png", url: "https://google.com", data_created: { month: "January", year: 2018 }, stack: ["HTML", "CSS", "JS"] },
-            { id: 4, name: "George Clooney", category: "HTML", preview: "Be-Latte.png", url: "https://google.com", data_created: { month: "January", year: 2018 }, stack: ["HTML", "CSS", "JS"] },
-            { id: 5, name: "Meryl Streep", category: "JS", preview: "bicycle.png", url: "https://google.com", data_created: { month: "January", year: 2018 }, stack: ["HTML", "CSS", "JS"] },
-            { id: 6, name: "Amy Poehler", category: "HTML", preview: "Brandly.png", url: "https://google.com", data_created: { month: "January", year: 2018 }, stack: ["HTML", "CSS", "JS"] },
-            { id: 7, name: "Lady of Lórien", category: "Vector", preview: "Corporate.png", url: "https://google.com", data_created: { month: "January", year: 2018 }, stack: ["HTML", "CSS", "JS"] },
-            { id: 8, name: "BB8", category: "Vector", preview: "Home.png", url: "https://google.com", data_created: { month: "January", year: 2018 }, stack: ["HTML", "CSS", "JS"] },
-            { id: 9, name: "Michael Scott", category: "Vector", preview: "kitchen-master.png", url: "https://google.com", data_created: { month: "January", year: 2018 }, stack: ["HTML", "CSS", "JS"] }
+            { id: 1, name: "Ali Sayed’s Web Designing Project", category: "HTML", preview: "alisayed.png", url: "http://d90992qi.bget.ru/alisayed", data_created: { month: "April", year: 2018 }, stack: ["HTML", "CSS", "JS"], desc: "Description 64311" },
+            { id: 2, name: "Le coq stortif", category: "HTML", preview: "lecoq.png", url: "http://d90992qi.bget.ru/lecoq", data_created: { month: "April", year: 2018 }, stack: ["HTML", "CSS", "JS"], desc: "Description 178761" },
+            { id: 3, name: "Быстрый (серверный дискаунтер)", category: "HTML", preview: "discounter.png", url: "http://d90992qi.bget.ru/fast", data_created: { month: "April", year: 2018 }, stack: ["HTML", "CSS", "JS"], desc: "Description 155311" },
+            { id: 4, name: "Meet Perth", category: "HTML", preview: "meetperth.png", url: "http://d90992qi.bget.ru/meet-perth", data_created: { month: "April", year: 2018 }, stack: ["HTML", "CSS", "JS"], desc: "Description 111" },
+            { id: 5, name: "Hosting Company Next39", category: "HTML", preview: "next39.png", url: "http://d90992qi.bget.ru/next39", data_created: { month: "April", year: 2018 }, stack: ["HTML", "CSS", "JS"], desc: "Description 111" },
+            { id: 6, name: "Smart Cadastre", category: "HTML", preview: "smartcadastre.png", url: "http://d90992qi.bget.ru/smartcadastre", data_created: { month: "April", year: 2018 }, stack: ["HTML", "CSS", "JS"], desc: "Description 145745" },
+            { id: 7, name: "Teletrade", category: "HTML", preview: "teletrade.png", url: "http://d90992qi.bget.ru/money", data_created: { month: "April", year: 2018 }, stack: ["HTML", "CSS", "JS"], desc: "Description 137541" },
+            { id: 8, name: "Tinkoff", category: "HTML", preview: "tinkoff.png", url: "http://d90992qi.bget.ru/tinkoff", data_created: { month: "April", year: 2018 }, stack: ["HTML", "CSS", "JS"], desc: "Description 111" }
         ],
         selectedCategory: "All",
         target: {
@@ -59,12 +78,14 @@ var vm = new Vue({
     },
     methods: {
         click_page(e) {
-            var id = e.toElement.parentNode.getAttribute("data-id");
+            var id = e.toElement.parentNode.parentNode.getAttribute("data-id") - 1;
             this.target.name = this.project[id].name;
             this.target.stack = this.project[id].stack.join(" ,");
             this.target.img = this.project[id].preview;
             this.target.created = this.project[id].data_created;
             this.target.url = this.project[id].url;
+            console.log(this.target.img);
+            console.log(this.target.url);
         }
     }
 });
@@ -72,9 +93,12 @@ var vm = new Vue({
 
 var pic = document.querySelectorAll(".portfolio__item"),
     modal_portfolio = document.querySelector(".portfolio > .modal"),
+    modal_form = document.querySelector(".hello > .modal"),
     btn_close = document.querySelectorAll(".btns-group__button--download"),
     page = document.querySelector("body"),
-    modal = document.querySelectorAll(".modal");
+    modal = document.querySelectorAll(".modal"),
+    skills = document.querySelector(".skills"),
+    header = document.querySelector("header");
 
 for (i = 0; i < pic.length; i++) {
     pic[i].addEventListener("click", open_modal);
