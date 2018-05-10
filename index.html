@@ -5,37 +5,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Михаил Мигалов</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Roboto|Open+Sans" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
 </head>
 
 <body>
+    <a class="anchor" name="top"></a>
     <header class="header">
         <div class="wrapper">
-            <div class="logo"><span class="point">Michel</span></div>
+            <div class="logo">
+                <img class="logo__img" src="img/logo-studio.svg">
+                <span class="point">Michel</span>
+            </div>
             <div class="menu-wrapper">
                 <div class="hamburger-menu"></div>
             </div>
             <nav class="nav nav--menu">
                 <ul class="nav__list">
-                    <li class="nav__item nav__item--current"><a class="nav__link" href="#">Главная</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Технологии</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Навыки</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Портфолио</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Обратная связь</a></li>
+                    <li class="nav__item nav__item--current"><a class="nav__link" href="#hello">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#tech">Технологии</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#skills">Навыки</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#port">Портфолио</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#feed">Обратная связь</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <!--.shadow-->
     <div class="wrapper">
+        <a class="anchor" name="hello"></a>
         <section class="hello"><img class="hello__picture" src="img/man_office.svg" />
             <div class="hello__about-me">
                 <h1 class="hello__title"><span class="point">Михаил Мигалов</span></h1>
-                <p class="hello__desc">Я начинающий верстальщик. В настоящее время я ищу работу в области frontend-разработки. Помимо этого я продолжаю верстать и писать валидный код, чтобы расширить свои комметенции в качестве веб-разработчика.</p>
+                <p class="hello__desc">Я начинающий верстальщик. В настоящее время я ищу работу в области frontend-разработки. Помимо этого я продолжаю верстать и писать валидный код, чтобы расширить свои компетенции в качестве веб-разработчика.</p>
                 <table class="hello__table">
                     <tbody>
                         <tr>
@@ -66,6 +74,7 @@
                 </div>-->
             </div>
         </section>
+        <a class="anchor" name="tech"></a>
         <section class="technologies">
             <div class="article">
                 <h2 class="article__title"><span class="point">Технологии</span></h2>
@@ -91,10 +100,11 @@
                 </div>
             </div>
         </section>
+        <a class="anchor" name="skills"></a>
         <section class="skills">
             <div class="article">
                 <h2 class="article__title"><span class="point">Навыки</span></h2>
-                <p class="article__description">Ещё не придумал описание</p>
+                <p class="article__description">Здесь вкратце описаны навыки, которыми я обладаю и совершенствую.</p>
                 <div class="article__squares"></div>
             </div>
             <div class="skills__list">
@@ -106,7 +116,7 @@
                     </div>
                     <div class="list-skills__item">
                         <h4 class="item-skill__title">CSS 3</h4>
-                        <p class="item-skill__desc">Свободно владею, знаю немсколько хаков, умею правильно кэшировать подключенные стили, использую спрайты и анимацию</p>
+                        <p class="item-skill__desc">Свободно владею, знаю несколько хаков, умею правильно кэшировать подключенные стили, использую спрайты и анимацию</p>
                     </div>
                     <div class="list-skills__item">
                         <h4 class="item-skill__title">Adobe Photoshop</h4>
@@ -160,16 +170,21 @@
                         <p class="item-skill__desc">Разбираю чужой код, ставлю плагины, знаю базовый синтаксис</p>
                     </div>
                     <div class="list-skills__item">
+                        <h4 class="item-skill__title">Vue.JS</h4>
+                        <p class="item-skill__desc">Пишу простые алгоритмы с помощью данного JS-фреймворка (используется на этом сайте)</p>
+                    </div>
+                    <div class="list-skills__item">
                         <h4 class="item-skill__title">LESS/SASS/Stylus</h4>
                         <p class="item-skill__desc">Знаю принципы работы CSS-препроцессоров, пишу селекторы по методологии БЭМ</p>
                     </div>
                     <div class="list-skills__item">
                         <h4 class="item-skill__title">Github</h4>
-                        <p class="item-skill__desc">Использую систему контролю версии для хранения своих работ и отслеживания изменения в своих работах</p>
+                        <p class="item-skill__desc">Использую систему контроля версий для хранения своих работ и отслеживания изменений</p>
                     </div>
                 </div>
             </div>
         </section>
+        <a class="anchor" name="port"></a>
         <section class="portfolio">
             <div class="article article--center">
                 <h2 class="article__title"><span class="point">Портфолио</span></h2>
@@ -178,50 +193,89 @@
                 <ul class="filter nav__list nav__list">
                     <li class="nav__item"><label><input class="nav__radiobutton" type="radio" v-model="selectedCategory" value="All" /><span>Все проекты</span></label></li>
                     <li class="nav__item"><label><input class="nav__radiobutton" type="radio" v-model="selectedCategory" value="HTML" /><span>Вёрстка</span></label></li>
-                    <li class="nav__item"><label><input class="nav__radiobutton" type="radio" v-model="selectedCategory" value="JS" /><span>JavaScript</span></label></li>
                     <li class="nav__item"><label><input class="nav__radiobutton" type="radio" v-model="selectedCategory" value="Vector" /><span>Векторная графика</span></label></li>
+                    <li class="nav__item"><label><input class="nav__radiobutton" type="radio" v-model="selectedCategory" value="UI/UX" /><span>UI/UX</span></label></li>
+                    <li class="nav__item"><label><input class="nav__radiobutton" type="radio" v-model="selectedCategory" value="JS" /><span>JavaScript</span></label></li>
                 </ul>
             </nav>
             <div class="portfolio__list">
                 <div class="portfolio__item" v-bind:data-id="project.id" project v-for="project in filteredProject">
                     <div class="portfolio__border">
-                        <img @click="click_page($event)" class="portfolio__img" v-bind:src="'img/previews/'+project.preview" alt="" />
+                        <img v-if="project.vector" @click="click_page($event)" class="portfolio__img" v-bind:src="'img/vector/'+project.preview" alt="" />
+                        <img v-else @click="click_page($event)" class="portfolio__img" v-bind:src="'img/previews/'+project.preview" alt="" />
                     </div>
                 </div>
             </div>
             <div class="modal">
                 <div class="modal-dialog">
                     <h1 class="modal__title">{{ target.name }}</h1>
-                    <p><span class="span-title">Стэк технологий: &nbsp</span><span>{{ target.stack }}</span></p>
-                    <p><span class="span-title">Дата создания: &nbsp </span><span>{{ target.created.month }}, {{ target.created.year }}</span></p>
-                    <img class="modal__img" v-bind:src="'img/screenshots/'+target.img" alt="" />
+                    <table class="hello__table">
+                        <tbody>
+                            <tr>
+                                <td class="table-hello__title">Стэк технологий: &nbsp</td>
+                                <td>{{ target.stack }}</td>
+                            </tr>
+                            <tr v-if="target.desc_bool">
+                                <td class="table-hello__title">Описание:</td>
+                                <td>{{ target.desc }}</td>
+                            </tr>
+                            <tr>
+                                <td class="table-hello__title">Дата создания: </td>
+                                <td>{{ target.created.month }}, {{ target.created.year }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <img v-if="target.vector" class="modal__img" v-bind:src="'img/vector/'+target.img" alt="" />
+                    <img v-else class="modal__img" v-bind:src="'img/screenshots/'+target.img" alt="" />
                     <div class="btns-group">
-                        <a v-bind:href="target.url"><button class="btns-group__button">Открыть</button></a>
+                        <a v-if="target.url" v-bind:href="target.url"><button class="btns-group__button">Открыть</button></a>
                         <button class="btns-group__button btn-download btns-group__button--download">Закрыть</button>
                     </div>
                 </div>
             </div>
         </section>
+        <a class="anchor" name="feed"></a>
         <section class="feedback">
             <div class="article">
                 <h2 class="article__title"><span class="point">Обратная связь</span></h2>
-                <p class="article__description">Временно не доступен, так как не работает phpmail(). Вместо этого можете <a href="tel:+79093934313">позвонить</a>, либо использовать <a href="#hello">соцсети.</a></p>
+                <p class="article__description">Временно не доступно, так как не работает phpmail(). Вместо этого вы можете <a href="tel:+79093934313">позвонить</a>, либо использовать <a id="look-to-networks" href="#hello">соцсети.</a></p>
                 <div class="article__squares"></div>
             </div>
             <form class="feedback__form">
-                <input class="feedback__input" type="text" placeholder="Имя" />
-                <input class="feedback__input" type="email" placeholder="Электронный адрес" />
-                <textarea class="feedback__textarea" type="text" placeholder="Сообщение"></textarea>
+                <input class="feedback__input" type="text" placeholder="Имя" disabled />
+                <input class="feedback__input" type="email" placeholder="Электронный адрес" disabled />
+                <textarea class="feedback__textarea" type="text" placeholder="Сообщение" disabled></textarea>
                 <div class="feedback__buttons btns-group">
-                    <button class="btns-group__button" type="submit">Send Message</button>
+                    <button class="btns-group__button" type="submit">Отправить сообщение</button>
                 </div>
             </form>
         </section>
     </div>
-    <footer>
+    <a id="top" href="#top"><img src="img/top.svg" alt=""></a>
+    <a id="tech-info" href="#"><img src="img/warning.svg" alt=""></a>
+    <div class="modal technical-information">
+        <div class="modal-dialog">
+            <h1 class="modal__title">Техническая информация</h1>
+            <p>Добрый день! Здесь я коротко перечислюо, что добавлено на сайт-портфолио и какие технологии здесь используются.</p>
+            <ul>
+                <li>Навигационная панель движется вместе со скроллом и сужается во время скроллинга</li>
+                <li>Анимированное меню</li>
+                <li>Плавный скроллинг после клика на выбранный раздел</li>
+                <li>Сайт адаптивен</li>
+                <li>Сайт построен по БЭМ методологии</li>
+                <li>Сайт построен на CSS Grid Layout</li>
+                <li>Используется библиотека JQuery</li>
+                <li>Используется JS-фреймворк Vue (с помощию него создан фильтр в разделе "Портфолио")</li>
+            </ul>
+            <div class="btns-group">
+                <button class="btns-group__button btn-download btns-group__button--download">Закрыть</button>
+            </div>
+        </div>
+    </div>
+    <!--<footer>
         <p>Copyright 2018 Michel.</p>
-    </footer>
-    <script src="http://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    </footer>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/user.js"></script>
 </body>
