@@ -558,7 +558,7 @@ section {
   .wrapper {
     width: 480px; }
   .portfolio__list {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 210px; }
   .technologies__list {
     grid-template: inherit; }
   .feedback__form {

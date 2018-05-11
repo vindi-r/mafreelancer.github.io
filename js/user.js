@@ -318,6 +318,7 @@ var vm = new Vue({
     },
     methods: {
         click_page(e) {
+            console.log(this.target)
             var id = e.toElement.parentNode.parentNode.getAttribute("data-id") - 1;
             this.target.name = this.project[id].name;
             this.target.stack = this.project[id].stack.join(" ,");
