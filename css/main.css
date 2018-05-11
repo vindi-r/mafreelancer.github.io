@@ -354,7 +354,7 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .header.active {
-    padding: 0; }
+    padding: 5px 0; }
 
 .logo {
   -webkit-align-self: center;
@@ -472,7 +472,6 @@ section {
 
 .skills {
   display: grid;
-  grid-template-columns: 1fr 2fr;
   grid-gap: 30px; }
   .skills__title {
     grid-column: 1/-1; }

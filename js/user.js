@@ -18,16 +18,7 @@ $(window).on('scroll', function() {
     fixedHeader();
 });
 
-//grid-expand
-window.onscroll = function() {
-        var ww = skills.getBoundingClientRect().top;
-        if (ww < document.querySelector("header").clientHeight) {
-            skills.classList.add('grid-default');
-        } else {
-            skills.classList.remove('grid-default');
-        }
-    }
-    //smooth scrolling
+//smooth scrolling
 $('.nav__link, #look-to-networks, #top').click(function() {
     var scroll_el = $(this).attr('href').slice(1);
     var name_scroll_el = 'a[name="' + scroll_el + '"]';
