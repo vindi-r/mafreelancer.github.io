@@ -332,7 +332,6 @@ var pic = document.querySelectorAll(".portfolio__item"),
     header = document.querySelector("header"),
     look_to_networks = document.querySelector('#look-to-networks'),
     icons = document.querySelectorAll(".mdi"),
-    warning = document.querySelector("#tech-info"),
     modal_tech = document.querySelector(".technical-information");
 
 for (i = 0; i < pic.length; i++) {
@@ -368,9 +367,3 @@ function open_modal() {
     header.classList.add("fix-padding");
 
 }
-
-warning.onclick = function() {
-    page.classList.add("modal--keep");
-    modal_tech.classList.add("modal--open");
-    return false
-};
