@@ -308,7 +308,7 @@ var vm = new Vue({
     },
     methods: {
         click_page(e) {
-            var id = e.toElement.parentNode.parentNode.getAttribute("data-id") - 1;
+            var id = e.target.parentNode.parentNode.getAttribute("data-id") - 1;
             this.target.name = this.project[id].name;
             this.target.stack = this.project[id].stack.join(" ,");
             this.target.img = this.project[id].preview;
