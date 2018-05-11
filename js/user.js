@@ -287,7 +287,6 @@ var vm = new Vue({
                 data_created: { month: "Апрель", year: 2018 },
                 stack: ["Ninjamock"],
             }
-
         ],
         selectedCategory: "All",
         target: {
@@ -318,7 +317,6 @@ var vm = new Vue({
     },
     methods: {
         click_page(e) {
-            console.log(this.target)
             var id = e.toElement.parentNode.parentNode.getAttribute("data-id") - 1;
             this.target.name = this.project[id].name;
             this.target.stack = this.project[id].stack.join(" ,");
@@ -328,8 +326,6 @@ var vm = new Vue({
             this.target.vector = this.project[id].vector;
             this.target.desc = this.project[id].desc;
             this.target.desc_bool = this.project[id].desc_bool
-            console.log(this.target.img);
-            console.log(this.target.url);
         }
     }
 });
