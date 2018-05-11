@@ -200,10 +200,10 @@
                 </ul>
             </nav>
             <div class="portfolio__list">
-                <div class="portfolio__item" v-bind:data-id="project.id" project v-for="project in filteredProject">
+                <div class="portfolio__item" project v-for="project in filteredProject">
                     <div class="portfolio__border">
-                        <img v-if="project.vector" @click="click_page($event)" class="portfolio__img" v-bind:src="'img/vector/'+project.preview" alt="" />
-                        <img v-else @click="click_page($event)" class="portfolio__img" v-bind:src="'img/previews/'+project.preview" alt="" />
+                        <img v-if="project.vector" @click="click_page($event, project.id)" class="portfolio__img" v-bind:src="'img/vector/'+project.preview" alt="" />
+                        <img v-else @click="click_page($event, project.id)" class="portfolio__img" v-bind:src="'img/previews/'+project.preview" alt="" />
                     </div>
                 </div>
             </div>

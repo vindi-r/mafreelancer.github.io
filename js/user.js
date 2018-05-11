@@ -307,16 +307,26 @@ var vm = new Vue({
         }
     },
     methods: {
-        click_page(e) {
-            var id = e.target.parentNode.parentNode.getAttribute("data-id") - 1;
-            this.target.name = this.project[id].name;
-            this.target.stack = this.project[id].stack.join(" ,");
-            this.target.img = this.project[id].preview;
-            this.target.created = this.project[id].data_created;
-            this.target.url = this.project[id].url;
-            this.target.vector = this.project[id].vector;
-            this.target.desc = this.project[id].desc;
-            this.target.desc_bool = this.project[id].desc_bool
+        click_page(e, id) {
+            // аргумент $event при передаче id - врядли нужен
+            // функция filter выдаст массив тех элементов, на которые функция при исполнении сделала return true
+            var found = this.project.filter(function(elt) {
+              return elt.id === id;
+            });
+            if(found.length === 0) {
+                // это был клик по странному элементу. ID которого не найден в списке
+              return;
+            } else {
+                var project = found[0];
+              this.target.name = project.name;
+              this.target.stack = project.stack.join(" ,");
+              this.target.img = project.preview;
+              this.target.created = project.data_created;
+              this.target.url = project.url;
+              this.target.vector = project.vector;
+              this.target.desc = project.desc;
+              this.target.desc_bool = project.desc_bool;
+            }
         }
     }
 });
