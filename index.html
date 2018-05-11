@@ -230,8 +230,8 @@
                     <img v-if="target.vector" class="modal__img" v-bind:src="'img/vector/'+target.img" alt="" />
                     <img v-else class="modal__img" v-bind:src="'img/screenshots/'+target.img" alt="" />
                     <div class="btns-group">
-                        <a v-if="target.url" v-bind:href="target.url"><button class="btns-group__button">Открыть</button></a>
-                        <button class="btns-group__button btn-download btns-group__button--download">Закрыть</button>
+                        <a v-if="target.url" v-bind:href="target.url" class="btns-group__button">Открыть</a>
+                        <a href="#" class="btns-group__button btn-download btns-group__button--download">Закрыть</a>
                     </div>
                 </div>
             </div>
@@ -267,7 +267,7 @@
                 <li>Сайт построен по БЭМ методологии</li>
                 <li>Сайт построен на CSS Grid Layout</li>
                 <li>Используется библиотека JQuery</li>
-                <li>Используется JS-фреймворк Vue (с его помощью создан фильтр в разделе "Портфолио")</li>
+                <li>Используется JS-фреймворк Vue (с помощию него создан фильтр в разделе "Портфолио")</li>
             </ul>
             <div class="btns-group">
                 <button class="btns-group__button btn-download btns-group__button--download">Закрыть</button>

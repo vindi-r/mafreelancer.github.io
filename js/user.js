@@ -344,8 +344,8 @@ var pic = document.querySelectorAll(".portfolio__item"),
     header = document.querySelector("header"),
     look_to_networks = document.querySelector('#look-to-networks'),
     icons = document.querySelectorAll(".mdi"),
-    warning = document.querySelector("#tech-info")
-modal_tech = document.querySelector(".technical-information");
+    warning = document.querySelector("#tech-info"),
+    modal_tech = document.querySelector(".technical-information");
 
 for (i = 0; i < pic.length; i++) {
     pic[i].addEventListener("click", open_modal);
@@ -359,9 +359,8 @@ function close_modal() {
         modal[j].scrollTop = 0;
         modal[j].classList.remove("modal--open");
     };
-    //modal_portfolio.classList.remove("modal--open");
-    //modal_tech.classList.remove("modal--open");
     page.classList.remove("modal--keep");
+    return false
 
 }
 
@@ -378,9 +377,12 @@ look_to_networks.onclick = flashing;
 function open_modal() {
     modal_portfolio.classList.add("modal--open");
     page.classList.add("modal--keep");
+    header.classList.add("fix-padding");
+
 }
 
 warning.onclick = function() {
     page.classList.add("modal--keep");
     modal_tech.classList.add("modal--open");
+    return false
 };

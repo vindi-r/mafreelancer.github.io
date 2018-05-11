@@ -30,11 +30,13 @@
   background: rgba(0, 0, 0, 0.3); }
 
 .modal--open {
-  display: block !important; }
+  z-index: 10 !important;
+  opacity: 1 !important; }
 
 .modal--keep {
   overflow-x: auto;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  padding-right: 17px; }
 
 .show-menu {
   opacity: 1 !important;
@@ -601,15 +603,18 @@ footer {
   text-align: center; }
 
 .modal {
-  display: none;
+  -webkit-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: -1;
   overflow-x: hidden;
-  overflow-y: auto; }
+  overflow-y: auto;
+  opacity: 0; }
   .modal-dialog {
     background: #fff;
     margin-top: 60px;
@@ -754,10 +759,17 @@ footer {
   text-transform: uppercase;
   color: #fff;
   padding: 15px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center; }
+  .btns-group__button:visited {
+    color: #fff; }
   .btns-group__button--download {
     background: #efefef;
     color: #000; }
+    .btns-group__button--download:visited {
+      color: #000; }
 
 #top {
   display: block;
@@ -794,3 +806,23 @@ footer {
     margin: 15px 0 0; }
   .nav--filter > .nav__list {
     grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 600px) {
+  .btns-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .btns-group__button {
+      min-width: 130px; }
+  .btn-download {
+    margin: 15px 0 0 0; } }
